@@ -1,0 +1,34 @@
+Per capire i concetti di "event loop" , "single thread" , "async" , e "non-bloking code", è utile anche comprendere:
+la "coda degli eventi"(event queue) e il "registro degli eventi"(call stack)
+
+1. Single Thread (Thread Singolo):
+    in un contesto di programmazione, "single thread" si riferisce al fatto che un'applicazione utilizza solo un singolo flusso di esecuzione. 
+    Ciò significa che il codice viene eseguito sequenzialmente, uno dopo l'altro, senza flussi paralleli.
+2. Event Loop (ciclo degli Eventi):
+    L'event loop è un concetto fondamentale nelle applicazioniJavaScript,specialmente nei browser web. È responzabile di gestire gli eventi e le operazioni asincrone. 
+     Funziona constantemente in background per verificare se ci sono eventi o operazione asincrone da eseguire.
+3. Async(Asincrono)
+        le operazione asincrone sono quelle che non bloccano l'esecuzione del codice. In altre parole, invece di attendere il completamento di un'operazione, 
+        il programma può continuare ad eseguire altre istruzioni e attendere una notifica o un callback quando l'operazione asincrona è terminata
+4. Non-Blocking Code(Codice Non Bloccante):
+    Il codice non bloccantee è un tipo di cosice che consente al programma di continuare ad eseguire altre operazioni senza attendere il compleatamento di un'operazione in corso. Questo è tipico delle operazione asincrone.
+5. Event Queue(Coda degli Eventi):
+    La coda degli eventi è un area in cui vengono imessi in attesa gli eventi (come i clic del mouse, le richieste di rete o i timer scaduti) fino a quando l'event loop non è pronto per elaborarli. Gli eventi vengono elaborati uno alla volta in ordine di arrivo.
+6. Call Stack(Registro degli Eventi)
+    Il registro degli eventi, chiamato anche call stack, è una struttura dati che tiene traccia dell'esecuzione delle funzioni nella tua applicaizione. 
+    Quando una funzione viene chiamata, essa viene inserita nel registro degli eventi. Quando una funzione termina, viene rimossa dal registro. 
+    Il registro delle chiamate è una struttura a pila, il che significa che l'ultrima funzine chiamata è la prima ad essere eseguita (principio Lifo-Last in, Firsy Out).
+7.Sync(sincrono)
+    sincrono e un modello di esecuzione in cui le operazioni vengono eseguite in un modo sequenziale, uno dopo l'altra, nell'ordine in cui sono state chiamate. 
+    In un contesto sincrono, un operazione deve essere completata prima che l'esecuzione proceda alla successiva. 
+    Il codice si blocca o attende il completamento dell'operazione corrente prima di passare a quella succesiva.
+
+
+    Ecco come questi concetti sono collegati:
+
+    Quando un evento asincrono si verifica (ad esempio, un clic del mouse o una richiesta di rete), l'evento viene messo nella coda degli eventi.
+    L'event loop monitora costantemente la coda degli eventi. Quando il call stack è vuoto (cioè non ci sono funzioni in attesa di essere eseguite), 
+    l'event loop preleva un evento dalla coda degli eventi e lo esegue.
+    L'uso di operazioni asincrone e codice non bloccante consente all'applicazione di rispondere in modo più reattivo agli eventi, poiché non è bloccata in attesa di operazioni lunghe.
+
+

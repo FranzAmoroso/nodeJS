@@ -1,0 +1,5 @@
+/* 
+Nodemon
+- è un pacchetto che resta sempre in ascolto aggiornando le risposte per ogni cambiamendo del codice
+
+- installazione: npm install nodemon --save-dev, così lo installera e lo salvera come devdepencies nelle package json*/

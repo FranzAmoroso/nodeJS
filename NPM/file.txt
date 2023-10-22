@@ -1,0 +1,54 @@
+
+NPM
+
+- pacchetto (pacchetti riutilizzabili)
+- pacchetto (package) <--> dipendenza (dependency) <--> modulo (module)
+- non c'è un controllo sulla pubblicazione, quindi prestare attenzione nel prendere pacchetti su npm
+- commandi 
+    npm
+    npm --version
+    npm i/install nome_pacchetto
+    npm install -g nome_pacchetto (sudo su mac)
+    npm unistall
+
+
+npm, acronimo di "Node Package Manager", è il gestore di pacchetti predefinito per Node.js, un ambiente di runtime JavaScript. 
+È uno strumento fondamentale nel mondo dello sviluppo JavaScript e Node.js, utilizzato per la gestione delle librerie e delle dipendenze del progetto. 
+Ecco una spiegazione più dettagliata di npm:
+
+    Gestione delle dipendenze:
+    npm consente agli sviluppatori di specificare le dipendenze del proprio progetto in un file chiamato package.json. 
+    Queste dipendenze possono includere librerie di terze parti, framework, strumenti di sviluppo e altro. 
+    npm scarica automaticamente queste dipendenze da un repository centralizzato, il "npm registry", e le installa nel progetto.
+
+    Pacchetti:
+    Le librerie e le dipendenze sono distribuite come "pacchetti" npm. 
+    Un pacchetto npm è una raccolta di file e metadati associati, inclusi i file sorgente, i file di documentazione e le informazioni sulle versioni.
+
+    Installazione di pacchetti:
+    Gli sviluppatori possono installare pacchetti utilizzando il comando npm install <nome-pacchetto>. npm scaricherà il pacchetto specificato dal registry e lo installerà nel progetto.
+
+    package.json:
+    Il file package.json è un file di configurazione cruciale per un progetto Node.js. 
+    Contiene informazioni sul progetto, inclusi i nomi delle dipendenze, le versioni, gli script di avvio personalizzati, le informazioni sul progetto e altro. 
+    È possibile generare questo file manualmente o utilizzando il comando npm init.
+
+    Script personalizzati:
+    npm consente agli sviluppatori di definire script personalizzati nel file package.json. 
+    Questi script possono essere eseguiti tramite il comando npm run <nome-script>, 
+    il che è utile per l'automazione di attività come la compilazione del codice, l'esecuzione dei test e la gestione delle fasi di sviluppo.
+
+    Versioning delle dipendenze:
+    npm utilizza il versioning semantico (Semantic Versioning o SemVer) per gestire le versioni delle dipendenze. 
+    Gli sviluppatori possono specificare le versioni delle dipendenze nel package.json usando operatori come ^, ~, >, <, ecc.
+
+    Scopo globale e locale:
+    npm consente di installare pacchetti globalmente o localmente. 
+    Le dipendenze locali vengono installate nella directory del progetto, mentre quelle globali vengono installate a livello di sistema e possono essere utilizzate da diversi progetti.
+    differenza tra installazione locale e globale :
+    locale: verrà installato solo sul progetto
+    globale: verrà installato su tutti i progetti a cui lavoreremo anche nuovi progetti
+
+In sintesi, npm è uno strumento essenziale per gestire le dipendenze, automatizzare le attività di sviluppo e semplificare la gestione dei progetti JavaScript e Node.js. 
+Grazie al vasto ecosistema di pacchetti disponibili tramite npm, 
+gli sviluppatori possono accelerare lo sviluppo delle loro applicazioni utilizzando librerie di terze parti e condividere facilmente i propri progetti con altri sviluppatori.
