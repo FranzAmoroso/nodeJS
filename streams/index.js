@@ -11,7 +11,7 @@ for (let i = 0; 0<10000; i++){
     writeFileSync('./filegrande.txt', `ciao riga numero ${i}\n` , {flag : 'a'});
 } */
 
-//Scarichiamo i dati sovraccaricando la risposta del codice
+//Scarichiamo tutti i dati in una volta sovraccaricando la risposta del codice
 /* const { ReadFileSync, writeFileSync, readFileSync} = require('fs');
 const filegrande = readFileSync('./filegrande.txt');
 
